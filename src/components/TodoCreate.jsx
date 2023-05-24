@@ -20,13 +20,13 @@ const handleSubmit = (e) => {
   return (
     <>
      <form 
-     className="bg-white rounded-md overflow-hidden flex py-4 gap-4 items-center px-4  dark:bg-gray-800  "
+     className="bg-white rounded-md overflow-hidden flex py-4 gap-4 items-center px-4  dark:bg-gray-800 transition-all duration-1000 "
      onSubmit={handleSubmit}>
         <span className="rounded-full border-2 inline-block h-5 w-5 f"></span>
         <input 
         type="text" 
         placeholder="Create a new todo..."  
-        className="w-full text-gray-400 outline-none  dark:bg-gray-800"
+        className="w-full text-gray-400 outline-none  dark:bg-gray-800 transition-all duration-1000"
         value={title}
         onChange={(e) => setTitle(e.target.value)}/>
      </form>
